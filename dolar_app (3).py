@@ -27,9 +27,6 @@ alert = {
     } for t in types
 }
 
-if st.sidebar.button("🔄 Actualizar"):
-    st.experimental_rerun()
-
 @st.cache_data(ttl=60)
 def fetch_data():
     url = "https://dolarapi.com/v1/cotizaciones"
